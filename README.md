@@ -1,4 +1,4 @@
-# Fylofark
+# Fylodark
 
 Objectif: Réalisation du challenge frontendmentor.io "fylo_landing_page"
 

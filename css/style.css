@@ -1,0 +1,51 @@
+/**
+* GLOBALS
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root{
+	/*Colors*/
+	--bg-intro: hsl(217, 28%, 15%);
+	--bg-main: hsl(218, 28%, 13%);
+	--bg-footer: hsl(216, 53%, 9%);
+	--bg-testimonials: hsl(219, 30%, 18%);
+	--text-color: hsl(0, 0%, 100%);/*white*/
+	--cyan:hsl(176, 68%, 64%);
+	--blue:hsl(198, 60%, 50%);
+	
+	/*Fonts*/
+	--main-font:'Open Sans', sans-serif;/*headings, call-to-actions, header nav, weight 400 et 700*/
+	--title-font:'Raleway', sans-serif;/*weight 400 et 700*/
+}
+html{
+	font-size:62.5%;
+	box-sizing:border-box;
+}
+
+*, *:before, *:after{
+	box-sizing:inherit;
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-color:black;
+	font-family: var(--main-font);
+	font-size:1.4rem;
+	color:var(--text-color);
+}
+img{
+	max-width:100%;
+}
+a{
+	text-decoration:none;
+}
+/**
+* LAYOUT
+*/
+.page{
+	width:1440px;/*mobile 375px*/
+	margin:0 auto;
+	background:red;
+}
