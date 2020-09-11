@@ -73,7 +73,7 @@ h2 {
 * LAYOUT
 */
 .page {
-	width:750px;
+	width:100%;
 	margin:0 auto;
 	background: var(--bg-main);
 }
@@ -369,4 +369,10 @@ nav a:not(.logo) {
 }
 .attribution {
 	padding-bottom:5rem;
+}
+
+@media screen and (min-width:1440px) {
+	.page {
+		width:1440px;
+	}
 }
