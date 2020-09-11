@@ -272,7 +272,8 @@ nav a:not(.logo) {
 	border-radius:20px;
 	text-align:center;
 	padding:7rem 0 5.6rem;
-	margin-bottom:5rem;
+	margin-bottom:-40rem;
+	position:relative;
 }
 .sign-up__text {
 	padding: 0 5rem;
@@ -294,8 +295,78 @@ nav a:not(.logo) {
 /**
 * FOOTER
 */
+
 .footer {
-	margin-top:-5rem;
 	background-color: var(--bg-footer);
 	padding-top:50rem;
+}
+.footer__logo {
+	width: 47%;
+    margin-left: 7.7rem;
+    margin-top: 4.5rem;
+}
+.footer__infos {
+	width:86%;
+	margin:9rem auto 0;
+}
+.infos__address {
+	margin-top:2rem;
+	display:flex;
+	align-items:flex-start;
+	margin-bottom:3rem;
+}
+.infos__address > img {
+	width:14%;
+	margin-right:6rem;
+}
+.infos__address > p {
+    margin-top: -1.3rem;
+    font-size: 3rem;
+    line-height: 1.6;
+	letter-spacing: 1.1px;
+}
+.infos__contacts {
+	margin-left:1rem;
+}
+.contacts__icon {
+	width:4%;
+	margin-right:4.5rem;
+}
+.contacts__icon--email {
+	width: 6%;
+	margin-top: 5rem;
+	margin-right:3.5rem;
+}
+.infos__sitemap {
+	margin:16.5rem 0 17rem 0.5rem;
+	font-size:3rem;
+}
+.infos__sitemap > * {
+	display:block;
+	margin-bottom:4rem;
+}
+.contact-link {
+	margin-top:11rem;
+}
+.infos__socials {
+	width:50%;
+	margin:0 auto;
+	text-align:center;
+	margin-bottom:8rem;
+}
+.fab {
+	border:1px solid #fff;
+	border-radius:50%;
+	font-size:2.3rem;
+	padding:1.5rem;
+	margin:0 0.9rem;
+}
+.fa-facebook-f {
+	padding:1.5rem 2rem;
+}
+.fa-instagram {
+	padding:1.5rem 1.6rem;
+}
+.attribution {
+	padding-bottom:5rem;
 }
