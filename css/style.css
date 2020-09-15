@@ -49,9 +49,6 @@ h2,
 h3{
 	color:var(--grey);
 }
-/**
-* LAYOUT
-*/
 main{
 	width:1440px;
 	margin:0 auto;
@@ -372,7 +369,7 @@ footer p{
 		width:80%;
 	}
 }
-/*****************************************************************/
+
 @media screen and (max-width:550px){
 	.section-description{
 		width: 80%;
