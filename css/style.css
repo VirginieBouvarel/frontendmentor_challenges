@@ -3,12 +3,12 @@
 */
 :root {
 	/*Colors*/
-	--cyan:hsl(171, 66%, 44%);/*rgb(38,186,164);*/
-	--blue:hsl(233, 100%, 69%);/*rgb(97,115,255);*/
-	--grey:hsl(210, 10%, 33%);/*#465059*/
-	--lightgrey:hsl(201, 11%, 66%);
+	--strong-cyan:hsl(171, 66%, 44%);
+	--light-blue:hsl(233, 100%, 69%);
+	--dark-grayish-blue:hsl(210, 10%, 33%);
+	--grayish-blue:hsl(201, 11%, 66%);
 	/*Fonts*/
-	--mainfont:'Bai Jamjuree', sans-serif;/*regular:400 et bold:600*/
+	--mainfont:'Bai Jamjuree', sans-serif;
 }
 html {
 	font-size:62.5%;
@@ -23,8 +23,8 @@ html {
 
 body {
 	font-family: var(--mainfont);
-	font-size:1.6rem;
-	color:var(--lightgrey);
+	font-size:1.8rem;
+	color:var(--grayish-blue);
 }
 
 h1 {
@@ -33,11 +33,11 @@ h1 {
 
 h2,
 h3 {
-	color:var(--grey);
+	color:var(--dark-grayish-blue);
 }
 
 p {
-	color:var(--lightgrey);
+	color:var(--grayish-blue);
 	line-height:1.2;
 }
 
