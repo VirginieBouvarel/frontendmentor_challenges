@@ -1,0 +1,75 @@
+/**
+* GLOBALS
+*/
+:root {
+	/*Colors*/
+	--cyan:hsl(171, 66%, 44%);/*rgb(38,186,164);*/
+	--blue:hsl(233, 100%, 69%);/*rgb(97,115,255);*/
+	--grey:hsl(210, 10%, 33%);/*#465059*/
+	--lightgrey:hsl(201, 11%, 66%);
+	/*Fonts*/
+	--mainfont:'Bai Jamjuree', sans-serif;/*regular:400 et bold:600*/
+}
+html {
+	font-size:62.5%;
+	box-sizing:border-box;
+}
+
+*, *:before, *:after {
+	box-sizing:inherit;
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: var(--mainfont);
+	font-size:1.6rem;
+	color:var(--lightgrey);
+}
+
+h1 {
+	font-family:var(--title-font);
+}
+
+h2,
+h3 {
+	color:var(--grey);
+}
+
+p {
+	color:var(--lightgrey);
+	line-height:1.2;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+section + section {
+	margin-top:8rem;
+}
+
+.container {
+	max-width:1440px;
+	margin:0 auto;
+}
+
+.btn {
+	color:red;
+}
+
+.btn:hover {
+	color:green;
+}
+
+
