@@ -88,14 +88,14 @@ img {
 .intro,.track,.access,.supercharge,.download, .footer {
     padding:0 3.3rem;
 }
-.name {
+.box-title {
     font-size: 2.4rem;
     font-weight: 600;
 	letter-spacing: 0;
     color: var(--dark-grayish-blue);
-    margin-top:6.1rem;
+    margin:6.1rem auto 2.3rem;
 }
-.name--middle {
+.box-title--middle {
     margin-top:6.4rem;
 }
 
@@ -124,7 +124,10 @@ img {
 .track__desc {
     margin-bottom:7.3rem;
 }
-
+.track__tools {
+    max-width:34rem;
+    margin:0 auto;
+}
 /* ACCESS */
 
 .access {
@@ -132,10 +135,6 @@ img {
 }
 .access__desc {
     margin-bottom:7.2rem;
-}
-.access__img {
-    max-width: 112%;
-    margin-left: -2rem;
 }
 
 /* SUPERCHARGE */
@@ -147,7 +146,8 @@ img {
     margin-bottom:3.3rem;
 }
 .supercharge-tools {
-    margin-bottom:14rem;
+    max-width:34.8rem;
+    margin:0 auto 14rem;
 }
 .supercharge-tools__item {
     margin-top:6.5rem;
@@ -219,6 +219,45 @@ img {
 .socials__item {
     font-size:2.4rem;
 }
-.socials__item:not(.last) {
+.socials__item:not(.last) {              
     margin-right:4rem;
+}
+
+@media screen and (min-width:579px) {
+    .wrap-s {
+        max-width:694px;
+        margin:0 auto;
+    }
+    .wrap-m {
+        max-width:1114px;
+        margin:0 auto;
+    }
+    .btns {
+        display:flex;
+        justify-content:center;
+    }
+    .btn {
+        width:22.7rem;
+    }
+    .btn--cyan {
+        margin-right:1.6rem;
+    }
+
+
+}
+
+@media screen and (min-width:1200px) {
+    h1 {
+        font-size:4.6rem;
+    }
+    h2 {
+        font-size:3.6rem;
+    }
+    h2 + P {
+        font-size:1.8rem;
+        line-height:3rem;
+    }
+    .intro__desc {
+        font-size:2rem;
+    }
 }
