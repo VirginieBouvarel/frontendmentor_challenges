@@ -124,7 +124,7 @@ img {
 .track__desc {
     margin-bottom:7.3rem;
 }
-.track__tools {
+.track-tools {
     max-width:34rem;
     margin:0 auto;
 }
@@ -246,6 +246,20 @@ img {
 
 }
 
+@media screen and (min-width:768px) {
+    .track-content {
+        display:flex;
+        justify-content:center;
+        margin:9rem auto 0;
+        margin-left:-30rem;
+    }
+    .track-tools {
+        margin:0 0 0 11rem;
+    }
+    .track-tools__item {
+        text-align:left;
+    } 
+}
 @media screen and (min-width:1200px) {
     h1 {
         font-size:4.6rem;
