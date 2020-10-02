@@ -136,7 +136,11 @@ img {
 .access__desc {
     margin-bottom:7.2rem;
 }
-
+.access__img {
+    max-width:112%; 
+    /* max-width:346.067px; */
+    margin-left:-6%;
+}
 /* SUPERCHARGE */
 
 .supercharge {
@@ -241,6 +245,11 @@ img {
     }
     .btn--cyan {
         margin-right:1.6rem;
+    }
+    .access__img {
+        width:100%;
+        max-width:905px;
+        margin:0 auto;
     }
 
 
