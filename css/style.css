@@ -12,14 +12,13 @@
 }
 html {
 	font-size:62.5%;/* 1rem = 10px*/
-	box-sizing:border-box;
 }
 *, *:before, *:after {
-	box-sizing:inherit;
+	box-sizing:border-box;
 	margin:0;
 	padding:0;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
     margin:0;
 }
 body {
@@ -60,10 +59,6 @@ img {
 	max-width:100%;
 	height:auto;
 }
-.section-header {
-    max-width:694px;
-    margin:0 auto;
-}
 .btn {
 	width:31.1rem;
 	height:5.6rem;
@@ -82,15 +77,19 @@ img {
 }
 .btn--cyan {
 	background-color:var(--strong-cyan);
-    filter: drop-shadow(0px 10px 10px rgba(137,229,199,0.5));
+    box-shadow: 0px 10px 10px rgba(137,229,199,0.5);
     margin-bottom:2.3rem;
 }
 .btn--blue {
 	background-color: var(--light-blue);
-	filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.1));
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
 }
 .intro,.track,.access,.supercharge,.download, .footer {
     padding:0 3.3rem;
+}
+.section-header {
+    max-width:694px;
+    margin:0 auto;
 }
 .box-title {
     font-size: 2.4rem;
@@ -104,7 +103,6 @@ img {
 }
 
 /* HEADER */
-
 .logo {
 	width:125px;
 	height:125px;
@@ -112,7 +110,6 @@ img {
 }
 
 /* INTRO */
-
 .intro {
     margin-bottom: 16.5rem;
 }
@@ -121,7 +118,6 @@ img {
 }
 
 /* TRACK */
-
 .track {
     margin-bottom:19.9rem;
 }
@@ -133,7 +129,6 @@ img {
     margin:0 auto;
 }
 /* ACCESS */
-
 .access {
     margin-bottom:11.5rem;
 }
@@ -142,11 +137,10 @@ img {
 }
 .access__img {
     max-width:112%; 
-    /* max-width:346.067px; */
     margin-left:-6%;
 }
-/* SUPERCHARGE */
 
+/* SUPERCHARGE */
 .supercharge {
     margin-bottom:17.5rem;
 }
@@ -191,7 +185,6 @@ img {
 }
 
 /* DOWNLOAD*/
-
 .download {
     margin-bottom:16.8rem;
 }
@@ -201,7 +194,6 @@ img {
 }
 
 /* FOOTER */
-
 .footer {
 	background-color: hsl(210, 1%, 97%);
     padding-bottom:5.1rem;
@@ -239,6 +231,7 @@ img {
     margin-right:4rem;
 }
 
+/* RWD */
 @media screen and (min-width:579px) {
     .btns {
         display:flex;
@@ -284,11 +277,13 @@ img {
         text-align:left;
         margin-bottom:1rem;
     }
-  
-
 }
 
 @media screen and (min-width:768px) {
+    body {
+        background: url('../img/bg-header-desktop.png') no-repeat;
+        background-size:contain;
+    }
     .track-content {
         display:flex;
         justify-content:center;
