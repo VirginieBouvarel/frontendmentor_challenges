@@ -217,12 +217,15 @@ img {
     line-height: 3rem;
     color:var(--dark-grayish-blue);
 }
-.footer-link:hover {
+.footer__link:hover {
     color:var(--strong-cyan);
     cursor:pointer;
 }
+.legals {
+    display:flex;
+    flex-flow:column wrap;
+}
 .legals__item {
-    display:block;
     margin-bottom: 2rem;
     font-size: 1.8rem;
 }
@@ -270,6 +273,19 @@ img {
     .partners__item img {
         width:auto;
     }
+    .legals {
+        max-height:10rem;
+        align-content:flex-end;
+        max-width:77.43rem;
+        margin:0 auto;
+    }
+    .legals__item {
+        width: 29%;
+        text-align:left;
+        margin-bottom:1rem;
+    }
+  
+
 }
 
 @media screen and (min-width:768px) {
@@ -305,6 +321,34 @@ img {
     }
     .intro__desc {
         font-size:2rem;
+    }
+    .footer {
+        padding:3.5rem 0 2.9rem;
+    }
+    .footer-content {
+        width:77.4%;
+        max-height:1114px;
+        margin:0 auto;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .footer__logo {
+        margin:0;
+    }
+    .legals {
+        flex-grow:1;
+        align-content:flex-start;
+        margin-left:13.4rem;
+    }
+    .legals__item {
+        width:25%;
+    }
+    .socials {
+        margin:0;
+    }
+    .socials__item {
+        margin-right:2.4rem;
     }
 }
 
