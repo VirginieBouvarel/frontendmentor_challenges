@@ -3,6 +3,7 @@
 Objectif: Réalisation du challenge frontendmentor.io "clipboard-landing-page-master" en version mobile-first
 
 > Technos: HTML/CSS
+
 > Outil utilisé: Photopéa
 
 # Frontend Mentor - Clipboard landing page
