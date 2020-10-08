@@ -1,0 +1,53 @@
+/**
+* GLOBALS
+*/
+
+:root{
+	/*Colors*/
+	--dark-blue: hsl(243, 62%, 33%);
+	--dark-gray: hsl(0, 0%, 20%);
+	--green:hsl(154, 62%, 33%);
+	--purple: hsl(330, 76%, 41%);
+	--light-blue:hsl(204, 100%, 67%) ;
+
+	/*Fonts*/
+	--title-font:'Oxygen', sans-serif;
+	--main-font:'Raleway', sans-serif;
+}
+html{
+	font-size:62.5%;/*1rem = 10px*/
+	box-sizing:border-box;
+}
+
+*, *:before, *:after{
+	box-sizing:inherit;
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: var(--main-font);
+	font-size:1.4rem;
+}
+h1 {
+	margin:0;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+a{
+	text-decoration:none;
+}
+ul li{
+	list-style-type: none;
+}
+
+.page{
+	max-width:375px; 
+	margin:0 auto;
+}
+
+/**
+* SECTIONS 
+*/
