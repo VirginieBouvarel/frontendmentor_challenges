@@ -4,15 +4,15 @@
 
 :root{
 	/*Colors*/
-	--dark-blue: hsl(243, 62%, 33%);
-	--dark-gray: hsl(0, 0%, 20%);
-	--green:hsl(154, 62%, 33%);
-	--purple: hsl(330, 76%, 41%);
-	--light-blue:hsl(204, 100%, 67%) ;
+	--dark-violet: hsl(256, 26%, 20%);
+	--grayish-blue: hsl(216, 30%, 68%);
+	--very-dark-violet: hsl(270, 9%, 17%);
+	--dark-grayish-violet: hsl(273, 4%, 51%);
+	--very-light-gray: hsl(0, 0%, 98%);
 
 	/*Fonts*/
-	--title-font:'Oxygen', sans-serif;
-	--main-font:'Raleway', sans-serif;
+	--title-font:'DM Serif Display', serif;
+	--main-font:'Karla', sans-serif;
 }
 html{
 	font-size:62.5%;/*1rem = 10px*/
@@ -27,10 +27,7 @@ html{
 
 body{
 	font-family: var(--main-font);
-	font-size:1.4rem;
-}
-h1 {
-	margin:0;
+	font-size:1.6rem;
 }
 img{
 	max-width:100%;
@@ -42,12 +39,47 @@ a{
 ul li{
 	list-style-type: none;
 }
-
-.page{
-	max-width:375px; 
-	margin:0 auto;
+.container {
+    max-width:0px;
+    margin:0 auto;
+}
+/*headings and fonts*/
+.title {
+    
+}
+.title--h1 {
+    
+}
+.title--h2 {
+    
 }
 
-/**
-* SECTIONS 
-*/
+/*components*/
+.btns {
+  
+}
+.btn {
+	width:31.1rem;
+	height:5.6rem;
+    border-radius:2.8rem;
+    border:none;
+	border-bottom:0.3rem solid hsla(0, 0%, 0%, 0.1);
+    font-size:1.8rem;
+    font-weight:600;
+    letter-spacing:0.1rem;
+    color:var(--white);
+}
+.btn:hover {
+    cursor:pointer;
+    opacity:0.8;
+}
+.btn--cyan {
+	background-color:var(--strong-cyan);
+    box-shadow: 0px 10px 10px rgba(137,229,199,0.5);
+    margin-bottom:2.3rem;
+}
+.btn--blue {
+	background-color: var(--light-blue);
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+}
+
