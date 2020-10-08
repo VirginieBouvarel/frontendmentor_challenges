@@ -9,5 +9,5 @@ Objectif: Réalisation du challenge frontendmentor.io "insure-landing-page-maste
 
 # Frontend Mentor - Insure landing page
 
-![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Insure landing page coding challenge](./src/design/desktop-preview.jpg)
 
