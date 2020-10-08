@@ -1,7 +1,11 @@
-/**
-* GLOBALS
-*/
+/*active states:
+lien nav et socials: cursor pointer + opacité 1
+lien nav active: cursor pointer + color white + bkg black
+button header/how we work: cursor pointer + bkg white + color black
+liens footer : curso pointer + underline
 
+*/
+/* globals */
 :root{
 	/*Colors*/
 	--dark-violet: hsl(256, 26%, 20%);
