@@ -117,8 +117,23 @@ section {
 .navbar__logo {
 	margin-right:auto;
 }
-.navbar__item {
+main {
+	position:relative;
+}
+.nav {
 	display:none;
+	background: url('../img/bg-pattern-mobile-nav.svg')right bottom no-repeat, hsl(278, 17%, 18%);
+	width:100%;
+	padding:4.4rem 0 30rem;
+	position:absolute;
+	z-index:100;
+}
+.nav__item {
+	margin-bottom:2.1rem;
+}
+.nav__item:last-of-type {
+	border:1px solid var(--text-white);
+	padding:1.3rem 0
 }
 .human {
 	background:url('../img/bg-pattern-intro-left-mobile.svg') left top 45.1rem  no-repeat, url('../img/bg-pattern-intro-right-mobile.svg') right bottom -19rem no-repeat, url('../img/image-intro-mobile.jpg') no-repeat, var(--bg-dark-violet);
