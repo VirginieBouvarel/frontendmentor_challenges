@@ -49,10 +49,14 @@ img{
 	max-width:100%;
 	height:auto;
 }
+
 /* layout */
 .container {            
-    max-width:330px; 
+    max-width:329px; 
     margin:0 auto;
+}
+section {
+	margin-bottom:14rem;
 }
 
 /*headings and fonts*/
@@ -90,12 +94,7 @@ img{
 .link--black {
 	color:var(--text-dark-violet);
 }
-.p-bold {
-	font-size:2.8rem;
-	letter-spacing:0;
-	color:var(--text-dark-violet);
-	font-family:var(--title-font);
-}
+
 
 /* components */
 .cta {
@@ -132,10 +131,41 @@ img{
 	font-family:var(--title-font);
 	margin-bottom:4.8rem;
 }
-
-.about {
-	background-color:transparent;
+.about__title {
+	margin-bottom:8.1rem;
 }
+.about__title:before {
+	content:"";
+	display:block;
+	width:15rem;
+	margin:0 auto 5rem;
+	border-top:1px solid hsl(296, 24%, 78%);
+}
+.values > li {
+	margin-bottom:6.8rem;
+}
+.values__img {
+	margin-bottom:3.7rem;
+}
+.p-bold {
+	font-size:2.8rem;
+	letter-spacing:0;
+	color:var(--text-dark-violet);
+	font-family:var(--title-font);
+	margin-bottom:2.4rem;
+}
+.p-bold + p {
+	padding:0 0.2rem;
+	
+}
+.how-work__content {
+	background:url('../img/bg-pattern-how-we-work-mobile.svg') right top no-repeat, var(--bg-dark-violet);
+	padding:7.5rem 2.8rem;
+}
+.how-work__title {
+	margin-bottom:4rem;
+}
+
 .footer {
 	background-color: var(--bg-light-grey);
 }
