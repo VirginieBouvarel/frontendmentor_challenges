@@ -92,7 +92,7 @@ section {
 	color:var(--text-grayish-violet);
 }
 .link--black {
-	color:var(--text-dark-violet);
+	color:var(--bg-dark-violet);
 }
 
 
@@ -165,10 +165,37 @@ section {
 .how-work__title {
 	margin-bottom:4rem;
 }
-
 .footer {
-	background-color: var(--bg-light-grey);
+	background: url('../img/bg-pattern-footer-mobile.svg') left top no-repeat, var(--bg-light-grey);
+	padding:9rem 0;
 }
+.row-1 {
+	border-bottom:1px solid hsl(0, 0%, 85%);
+}
+.footer__logo {
+	margin-bottom:2.2rem;
+}
+.socials {
+	margin-bottom:4rem;
+}
+.fab {
+	color:var(--text-grayish-violet);
+	font-size:2.4rem;
+}
+.fab:not(first-of-type) {
+	margin-left:1.5rem;
+}
+.sitemap > li:not(first-of-type) {
+	margin-bottom:2.1rem;
+}
+.sitemap__first-link {
+	margin:4.5rem auto 4.1rem;
+}
+
+
+
+
 .attribution {
 	background-color: var(--bg-light-grey);
+	padding-bottom:2rem;
 }
