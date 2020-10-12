@@ -1,8 +1,8 @@
-/*active states:
-lien nav et socials: cursor pointer + opacité 1
-lien nav active: cursor pointer + color white + bkg black
-button header/how we work: cursor pointer + bkg white + color black
-liens footer : curso pointer + underline
+/*active states desktop:
+nav__item:   opacité 1
+link--active:  color white + bkg black + pd
+
+
 */
 
 /* globals */
@@ -81,6 +81,9 @@ section {
 	font-family:var(--title-font);
 	text-transform:uppercase;
 }
+a.link:hover {
+	cursor:pointer;
+}
 .link--big {
 	font-size:2rem;
 	line-height:4rem;
@@ -94,7 +97,10 @@ section {
 .link--black {
 	color:var(--bg-dark-violet);
 }
-
+.link--active {
+	border:1px solid var(--text-white);
+	padding:1.3rem 0
+}
 
 /* components */
 .cta {
@@ -130,10 +136,6 @@ main {
 }
 .nav__item {
 	margin-bottom:2.1rem;
-}
-.nav__item:last-of-type {
-	border:1px solid var(--text-white);
-	padding:1.3rem 0
 }
 .human {
 	background:url('../img/bg-pattern-intro-left-mobile.svg') left top 45.1rem  no-repeat, url('../img/bg-pattern-intro-right-mobile.svg') right bottom -19rem no-repeat, url('../img/image-intro-mobile.jpg') no-repeat, var(--bg-dark-violet);
@@ -201,6 +203,10 @@ main {
 .fab:not(first-of-type) {
 	margin-left:1.5rem;
 }
+.fab:hover {
+	color:var(--text-dark-violet);
+	cursor:pointer;
+}
 .sitemap {
 	margin-bottom:2.7rem;
 }
@@ -210,8 +216,6 @@ main {
 .sitemap__item--first {
 	margin-bottom:2.1rem;
 }
-
-
 
 
 .attribution {
