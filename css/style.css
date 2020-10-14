@@ -122,13 +122,20 @@ a.link:hover {
 }
 .nav {
 	display:none;
-	background: url('../img/bg-pattern-mobile-nav.svg')right bottom no-repeat, hsl(278, 17%, 18%);
+	background: hsl(278, 17%, 18%);
 	width:100%;
 	padding:4.4rem 0 30rem;
 	position:absolute;
 	top: 7.3rem;
 	left: 0;
 	z-index:100;
+}
+.nav:after {
+	content:url('../img/bg-pattern-mobile-nav.svg');
+	position:absolute;
+	bottom:0;
+	left:0;
+	
 }
 .nav__list {
 	padding:0 2.3rem;
@@ -137,10 +144,23 @@ a.link:hover {
 	margin-bottom:2.1rem;
 }
 .human {
-	background:url('../img/bg-pattern-intro-left-mobile.svg') left top 45.1rem  no-repeat, url('../img/bg-pattern-intro-right-mobile.svg') right bottom -19rem no-repeat, url('../img/image-intro-mobile.jpg') no-repeat, var(--bg-dark-violet);
+	background: url('../img/image-intro-mobile.jpg') no-repeat, var(--bg-dark-violet);
+	position:relative;
 }
 .human__content {
 	padding:55.4rem 0 10rem;
+}
+.human__content:before {
+	content:url('../img/bg-pattern-intro-left-mobile.svg');
+	position:absolute;
+	top:45.1rem;
+	left:0;
+}
+.human__content:after {
+	content:url('../img/bg-pattern-intro-right-mobile.svg');
+	position:absolute;
+	right:0;
+	bottom:-19rem;
 }
 .lead-in {
 	color:var(--text-white);
