@@ -190,8 +190,12 @@ a.link:hover {
 	margin:0 auto 5rem;
 	border-top:1px solid hsl(296, 24%, 78%);
 }
-.values > li {
-	margin-bottom:6.8rem;
+.about__different {
+	display:none;
+}
+.values__item {
+	margin:0 auto 6.8rem;
+	max-width:35rem;
 }
 .values__img {
 	margin-bottom:3.7rem;
@@ -205,7 +209,6 @@ a.link:hover {
 }
 .p-bold + p {
 	padding:0 0.2rem;
-	
 }
 .how-work__content {
 	background:url('../img/bg-pattern-how-we-work-mobile.svg') right top no-repeat, var(--bg-dark-violet);
@@ -323,6 +326,12 @@ a.link:hover {
 		right:0;
 		top:0;
 	}
+	.about__title:before {
+		margin:0 0 5rem 10rem;
+	}
+	.about__different {
+		display:inline;
+	}
 
 }
 
@@ -336,7 +345,7 @@ a.link:hover {
 		padding:10.2rem 0 13.5rem;
 	}
 	.human__content:before {
-		top:42.5rem;
+		top:50.5rem;
 	}
 	.human__text {
 		margin:0;
@@ -349,4 +358,12 @@ a.link:hover {
 		width:15rem;
 		margin-bottom:6.8rem;
 	}
+	.about__content {
+		margin-top:32.3rem;
+		text-align:left;
+	}
+	.about__title:before {
+		margin:0 0 5rem;
+	}
+
 }
