@@ -195,7 +195,7 @@ a.link:hover {
 }
 .values__item {
 	margin:0 auto 6.8rem;
-	max-width:35rem;
+	max-width:35.4rem;
 }
 .values__img {
 	margin-bottom:3.7rem;
@@ -265,6 +265,11 @@ a.link:hover {
 		content:'';
 	}
 }
+@media screen and (min-width:500px) {
+	.about__different {
+		display:inline;
+	}
+}
 @media screen and (min-width:768px) {
 	.title {
 		font-size:7.2rem;
@@ -326,13 +331,16 @@ a.link:hover {
 		right:0;
 		top:0;
 	}
-	.about__title:before {
-		margin:0 0 5rem 10rem;
+}
+@media screen and (min-width:820px) {
+	.values {
+		display:flex;
+		flex-flow:row wrap;
+		justify-content:space-between;
 	}
-	.about__different {
-		display:inline;
+	.values__item {
+		margin-bottom:2.2rem;
 	}
-
 }
 
 @media screen and (min-width:1200px) {
@@ -365,5 +373,6 @@ a.link:hover {
 	.about__title:before {
 		margin:0 0 5rem;
 	}
+
 
 }
