@@ -78,10 +78,6 @@ section {
 a.link:hover {
 	cursor:pointer;
 }
-.link--big {
-	font-size:2rem;
-	line-height:4rem;
-}
 .link--white {
 	color:var(--text-white);
 }
@@ -121,7 +117,7 @@ a.link:hover {
 	margin-right:auto;
 }
 .nav {
-	display:none;
+	/* display:none; */
 	background: hsl(278, 17%, 18%);
 	width:100%;
 	padding:4.4rem 0 30rem;
@@ -142,6 +138,10 @@ a.link:hover {
 }
 .nav__item {
 	margin-bottom:2.1rem;
+}
+.nav__item > a {
+	font-size:2rem;
+	line-height:4rem;
 }
 .human {
 	background: url('../img/image-intro-mobile.jpg') no-repeat, var(--bg-dark-violet);
@@ -242,12 +242,20 @@ a.link:hover {
 
 /*RWD*/
 @media screen and (min-width:376px) {
-	.nav {
-		background:hsl(278, 17%, 18%);
+	.nav:after {
+		display:none;
 	
 	}
 }
 @media screen and (min-width:768px) {
+	.title {
+		font-size:7.2rem;
+		line-height:6.4rem;
+	}
+	.title--small {
+		font-size:5.6rem;
+		line-height:5.6rem;
+	}
 	.navbar {
 		padding:0.75rem 0;
 	}
@@ -255,7 +263,7 @@ a.link:hover {
 		display:none;
 	}
 	.nav {
-		background: var(--bg-white);
+		background:var(--bg-white);
 		position:static;
 		padding:0;
 	}
