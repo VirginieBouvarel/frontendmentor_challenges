@@ -276,10 +276,25 @@ a.link:hover {
 	.human__content:before {
 		content:'';
 	}
+	.footer {
+		background: url('../img/bg-pattern-footer-desktop.svg') left top no-repeat, var(--bg-light-grey);
+	}
 }
 @media screen and (min-width:500px) {
 	.about__different {
 		display:inline;
+	}
+	.row-1 {
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.row-2 {
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.sitemap {
+		width:50%;
 	}
 }
 @media screen and (min-width:768px) {
@@ -343,6 +358,11 @@ a.link:hover {
 		content:url('../img/bg-pattern-intro-right-desktop.svg');
 		right:0;
 		top:0;
+	}
+
+	.sitemap {
+		width:25%;
+		text-align:left;
 	}
 }
 @media screen and (min-width:820px) {
