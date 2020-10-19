@@ -220,10 +220,13 @@ a.link:hover {
 }
 .how-work__content {
 	background:url('../img/bg-pattern-how-we-work-mobile.svg') right top no-repeat, var(--bg-dark-violet);
-	padding:7.5rem 2.8rem;
+	/* padding:7.5rem 2.8rem; */
+	padding:7.5rem 0;
 }
 .how-work__title {
-	margin-bottom:4rem;
+	width:83%;
+	margin: 0 auto 4rem;
+	max-width:35rem;
 }
 .footer {
 	background: url('../img/bg-pattern-footer-mobile.svg') left top no-repeat, var(--bg-light-grey);
@@ -351,6 +354,15 @@ a.link:hover {
 	.values__item {
 		margin-bottom:2.2rem;
 	}
+	.how-work__content {
+		display:flex;
+		justify-content: space-around;
+		align-items:center;
+	}
+	.how-work__title {
+		text-align:left;
+		margin:0;
+	}
 }
 
 @media screen and (min-width:1200px) {
@@ -391,6 +403,7 @@ a.link:hover {
 	.about__title:before {
 		margin:0 0 5rem;
 	}
-
-
+	.how-work__title {
+		max-width:48rem;
+	}
 }
