@@ -121,11 +121,8 @@ a.link:hover {
 	margin-right:auto;
 }
 
-.nav-desktop {
-	display:none;
-}
 /* nav mobile */
-.nav-mobile {
+.nav {
 	display:none;
 	background: hsl(278, 17%, 18%);
 	width:100%;
@@ -135,20 +132,20 @@ a.link:hover {
 	left: 0;
 	z-index:100;
 }
-.nav-mobile:after {
+.nav:after {
 	content:url('../img/bg-pattern-mobile-nav.svg');
 	position:absolute;
 	bottom:0;
 	left:0;
 	
 }
-.nav-mobile__list {
+.nav__list {
 	padding:0 2.3rem;
 }
-.nav-mobile__item {
+.nav__item {
 	margin-bottom:2.1rem;
 }
-.nav-mobile__item > a {
+.nav__item > a {
 	font-size:2rem;
 	line-height:4rem;
 }
@@ -161,19 +158,19 @@ a.link:hover {
 	position:relative;
 }
 .human:before {
-	content:url('../img/image-intro-mobile.jpg');/* image famille */	
+	content:url('../img/image-intro-mobile.jpg');	
 }
 .human__content {
 	padding:10.2rem 0 10rem;
 }
 .human__content:before {
-	content:url('../img/bg-pattern-intro-left-mobile.svg');/* vague gauche*/
+	content:url('../img/bg-pattern-intro-left-mobile.svg');
 	position:absolute;
 	top:53.1rem;
 	left:0;
 }
 .human__content:after {
-	content:url('../img/bg-pattern-intro-right-mobile.svg');/*vague droite*/
+	content:url('../img/bg-pattern-intro-right-mobile.svg');
 	position:absolute;
 	right:0;
 	bottom:-19rem;
@@ -266,9 +263,9 @@ a.link:hover {
 
 /*RWD*/
 @media screen and (min-width:376px) {
-	.nav-mobile:after {
+	.nav:after {
 		display:none;
-	}
+	}/*nav mobile*/
 
 	.human__content:before {
 		content:'';
@@ -286,37 +283,35 @@ a.link:hover {
 	.navbar__btn {
 		display:none;
 	}
-	.nav-mobile {
-		display:none;
-	}
+
 	/*nav desktop */
-	.nav-desktop {
+	.nav {
 		display:block;
 		background:var(--bg-white);
 		position:static;
 		padding:0;
 	}
-	.nav-desktop ul {
+	.nav ul {
 		display:flex;
 		justify-content:flex-end;
 		align-items:center;
 		margin:0;
 	}
-	.nav-desktop__list {
+	.nav__list {
 		padding:0;
 	}
-	.nav-desktop__item {
+	.nav__item {
 		margin-bottom:0;
 	}
-	.nav-desktop__item:not(:last-child) {
+	.nav__item:not(:last-child) {
 		margin-right:2.1rem;
 	}
-	.nav-desktop__item > a {
+	.nav__item > a {
 		color:black;
 		font-size:1.3rem;
 		opacity:0.3;
 	}
-	.nav-desktop__item:hover > a {
+	.nav__item:hover > a {
 		opacity:1;
 	}
 	.link--active > a {
@@ -327,9 +322,6 @@ a.link:hover {
 	}
 	
 	/* end of nav desktop*/
-	.human {
-		padding-top:7rem;
-	}
 	.human__content:before {
 		content:url('../img/bg-pattern-intro-left-desktop.svg');
 		position:absolute;
