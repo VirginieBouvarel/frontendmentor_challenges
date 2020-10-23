@@ -120,20 +120,26 @@ a.link:hover {
 .navbar__logo {
 	margin-right:auto;
 }
-
+.navbar__btn {
+	cursor:pointer;
+}
 .nav-desktop {
 	display:none;
 }
+
 /* nav mobile */
 .nav-mobile {
-	display:none;
 	background: hsl(278, 17%, 18%);
 	width:100%;
 	padding:4.4rem 0 30rem;
 	position:absolute;
 	top: 8rem;
-	left: 0;
+	left: -100%;
 	z-index:100;
+	transition:0.5s;
+}
+.nav-mobile--show {
+	left:0;
 }
 .nav-mobile:after {
 	content:url('../img/bg-pattern-mobile-nav.svg');
