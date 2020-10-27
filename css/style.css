@@ -27,6 +27,7 @@ body {
 	font-family: var(--f-main);
 	font-size:1.3rem;
 	padding:8rem 0 6rem;
+	background: url('../img/bg-pattern-top-mobile.svg') top left no-repeat, url('../img/bg-pattern-bottom-mobile.svg') bottom right no-repeat;
 }
 
 h1, h2, h3 {
@@ -50,7 +51,7 @@ ul li {
 
 .container {
 	width:87%;
-	max-width:1108px;
+	max-width:327px; /*1108px*/
 	margin:0 auto;
 }
 
@@ -77,6 +78,8 @@ ul li {
 }
 .rate__item {
 	background-color: var(--c-light-grayish-magenta);
+	max-width:443px;
+	margin:0 auto;
 	border-radius:10px;
 	padding:1.5rem 0;
 }
@@ -102,6 +105,8 @@ ul li {
 
 .testimonials__item {
 	background-color: var(--c-very-dark-magenta);
+	max-width:355px;
+	margin:0 auto;
 	border-radius:10px;
 	padding:3.7rem 3rem;
 	color:var(--c-white);
@@ -134,7 +139,89 @@ ul li {
 	padding:0 0.5rem;
 }
 
-
+/* FRONTENDMENT0R ATTRIBUTION */
 .attribution > a {
 	color:var(--c-very-dark-magenta);
+}
+
+/* RESPONSIVE WEB DESIGN */
+
+@media screen and (min-width:376px) {
+	body {
+		background:  url('../img/bg-pattern-top-desktop.svg') top left -8rem no-repeat, url('../img/bg-pattern-bottom-desktop.svg') bottom right no-repeat;
+	}
+}
+@media screen and (min-width:800px) {
+	/* body {
+		background-color:rgba(143,188,143, 0.8); 
+	} */
+	.container {
+		max-width:1108px;
+	}
+	.fame {
+		/* background-color: #fff; */
+		display:flex;
+		justify-content: space-between;
+		align-items:flex-start;
+	}
+	.fame__header {
+		flex:0 1 40%;
+		text-align:left;
+	}
+
+	.rate {
+		margin-top:1.5rem;
+		flex:0 1 60%;
+		display:flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items:flex-end;
+		/* background-color: rgb(255,140,0, 0.8); */
+	}
+	.rate__item {
+		margin:0;
+		flex:0 0 auto;
+		min-width:443px;
+		display:flex;
+		align-items:center;
+	}
+	.rate__stars {
+		margin:0 3rem;
+	}
+
+	.testimonials {
+		display:flex;
+		align-items:flex-start;
+		/* background-color: #fff; */
+		min-height:28rem;
+	}
+	.testimonials__item {
+		flex:0 1 355px;
+
+	}
+	.testimonials__item + .testimonials__item {
+		margin-left:3rem;
+		margin-top:0;
+		align-self:center;
+
+	}
+	.testimonials__item:nth-child(3) {
+		align-self:flex-end;
+	}
+
+
+@media screen and (min-width:1160px) {
+	.header__title {
+		font-size:4.8rem;
+	}
+	.rate__item:nth-child(1) {
+		margin-right:9.3rem;
+	}
+	.rate__item:nth-child(2) {
+		margin-right:4.8rem;
+	}
+
+}
+
+
 }
