@@ -26,7 +26,7 @@ html {
 body {
 	font-family: var(--f-main);
 	font-size:1.3rem;
-	padding:4.7rem 0 6rem;
+	padding:8rem 0 6rem;
 }
 
 h1, h2, h3 {
@@ -55,10 +55,10 @@ ul li {
 }
 
 
-/* SECTIONS STYLES */
+/* SECTION FAME */
 
 .fame {
-	background-color:rgba(143,188,143, 0.8);
+	/* background-color:rgba(143,188,143, 0.8); */
 	margin-bottom:4.7rem;
 	text-align:center;
 }
@@ -72,7 +72,7 @@ ul li {
 .header__lead-in {
 	color:var(--c-dark-grayish-magenta);
 	font-size: 1.45rem;
-	line-height: 1.5;
+	line-height: 1.7;
 	margin-bottom: 4.5rem;
 }
 .rate__item {
@@ -93,7 +93,48 @@ ul li {
 }
 
 
+/* SECTION TESTIMONIALS */
 
 .testimonials {
-	background-color: rgb(255,140,0, 0.8);
+	/* background-color: rgb(255,140,0, 0.8); */
+	margin-bottom:9rem;
+}
+
+.testimonials__item {
+	background-color: var(--c-very-dark-magenta);
+	border-radius:10px;
+	padding:3.7rem 3rem;
+	color:var(--c-white);
+	line-height:1.6;
+	font-size:1.27rem;
+}
+.testimonials__item + .testimonials__item {
+	margin-top:1.5rem;
+}
+.testimonials__author {
+	display:flex;
+	margin-bottom:2.2rem;
+}
+.author__img {
+	flex-basis:4rem;
+	flex-shrink:0;
+	margin-right: 2rem;
+}
+.author__img > img {
+	border-radius:50%;
+}
+.author__name {
+	font-weight:700;
+}
+.author__job {
+	color:var(--c-soft-pink);
+}
+
+.testimonials__quote:not(first-of-type){
+	padding:0 0.5rem;
+}
+
+
+.attribution > a {
+	color:var(--c-very-dark-magenta);
 }
