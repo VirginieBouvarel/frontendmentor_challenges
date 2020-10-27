@@ -25,7 +25,8 @@ html {
 
 body {
 	font-family: var(--f-main);
-	font-size:1.5rem;
+	font-size:1.3rem;
+	padding:4.7rem 0 6rem;
 }
 
 h1, h2, h3 {
@@ -48,29 +49,51 @@ ul li {
 /* LAYOUTS */
 
 .container {
-	width:77%;
+	width:87%;
 	max-width:1108px;
 	margin:0 auto;
 }
 
-/* HEADINGS AND FONTS */
-
-/* .title {
-	font-size:4.8rem;
-	line-height:4.8rem;
-	letter-spacing:-1px;
-	font-family:var(--font-title);
-	color:var(--txt-white);
-}
-.link {
-	font-size:1.3rem;
-	font-weight:700;
-	letter-spacing:1px;
-	font-family:var(--font-title);
-	text-transform:uppercase;
-}
-.link:hover {
-	cursor:pointer;
-} */
 
 /* SECTIONS STYLES */
+
+.fame {
+	background-color:rgba(143,188,143, 0.8);
+	margin-bottom:4.7rem;
+	text-align:center;
+}
+.header__title {
+	font-size:3.3rem;
+	color:var(--c-very-dark-magenta);
+	margin-bottom:2.5rem;
+	letter-spacing:-2px;
+	line-height:1;
+}
+.header__lead-in {
+	color:var(--c-dark-grayish-magenta);
+	font-size: 1.45rem;
+	line-height: 1.5;
+	margin-bottom: 4.5rem;
+}
+.rate__item {
+	background-color: var(--c-light-grayish-magenta);
+	border-radius:10px;
+	padding:1.5rem 0;
+}
+.rate__item + .rate__item {
+	margin-top:1.5rem;
+}
+.rate__stars {
+	margin-bottom:1.5rem;
+}
+.rate__desc {
+	color:var(--c-very-dark-magenta);
+	font-weight:700;
+	font-size:1.3rem;
+}
+
+
+
+.testimonials {
+	background-color: rgb(255,140,0, 0.8);
+}
