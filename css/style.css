@@ -214,7 +214,7 @@ ul li {
 	}
 	.testimonials {
 		display:flex;
-		min-height:30rem;
+		min-height:28rem;
 	}
 	.testimonials__item {
 		flex:0 1 355px;	
