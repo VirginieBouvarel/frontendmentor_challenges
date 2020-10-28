@@ -367,6 +367,8 @@ a.link:hover {
 		margin-bottom:2.2rem;
 	}
 	.how-work__content {
+		background:url('../img/bg-pattern-how-we-work-desktop.svg') right bottom no-repeat, var(--bg-dark-violet);
+		padding:7rem 0;
 		display:flex;
 		justify-content: space-around;
 		align-items:center;
