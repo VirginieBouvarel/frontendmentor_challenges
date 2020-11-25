@@ -1,6 +1,6 @@
 # profilCard
 
-Objectif: Réalisation du challenge frontendmentor.io "profil-card-component-main" en version mobile-first
+Objectif: Réalisation du challenge frontendmentor.io "profil-card-component-main".
 
 > Technos: HTML/CSS
 
