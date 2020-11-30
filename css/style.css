@@ -30,24 +30,11 @@ img {
 
 /* SECTIONS STYLES */
 
-body:before {
-	content:url('../img/bg-pattern-top.svg');
-	position:absolute;
-	top: -52rem;
-	left: -22rem;
-	z-index:-1;
-}
-
-body:after {
-	content:url('../img/bg-pattern-bottom.svg');
-	position:absolute;
-	bottom: -48rem;
-	right: -17rem;
-	z-index:-1;
-}
-
 body {
-	background-color:var(--c-dark-cyan);
+	background:url('../img/bg-pattern-top.svg'), url('../img/bg-pattern-bottom.svg'),var(--c-dark-cyan);
+	background-repeat: no-repeat;
+	background-position: right calc(46.5vw + 15%) bottom calc(65vh - 15vw), left calc(35vw + 25%) top calc(68vh - 10vw);
+	
 	font-family: var(--f-main);
 	font-size:1.8rem;
 	height:100vh;
@@ -124,15 +111,4 @@ body {
 	position:absolute;
 	bottom:2rem;
 }
-
-@media screen and (max-width:500px) {
-	body:before {
-		top: -54rem;
-		left: -76rem;
-	}
-	
-	body:after {
-		bottom: -47rem;
-		right: -74rem;
-	}
-}
+ 
