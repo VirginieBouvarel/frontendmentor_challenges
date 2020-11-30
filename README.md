@@ -1,6 +1,6 @@
-# faq_accordion
+# FAQ accordion
 
-Objectif: Réalisation du challenge frontendmentor.io "FAQ-accordion-card-main".
+Objectif: Réalisation du challenge frontendmentor.io "faq-accordion-card-main".
 
 > Technos: HTML/CSS
 
