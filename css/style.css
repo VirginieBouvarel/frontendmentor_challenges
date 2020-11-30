@@ -31,6 +31,7 @@ img {
 /* SECTIONS STYLES */
 
 body {
+	perspective: 1000px;
 	background:url('../img/bg-pattern-top.svg'), url('../img/bg-pattern-bottom.svg'),var(--c-dark-cyan);
 	background-repeat: no-repeat;
 	background-position: right calc(46.5vw + 15%) bottom calc(65vh - 15vw), left calc(35vw + 25%) top calc(68vh - 10vw);
@@ -45,7 +46,14 @@ body {
 	overflow:hidden;
 }
 
+.container {
+	transform-style: preserve-3d;
+	max-width:120rem; 
+	max-height:80rem;
+}
 .card {
+	transform-style: preserve-3d;
+
 	position:relative;
 	overflow:hidden;
 	width:325px;
