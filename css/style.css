@@ -1,0 +1,100 @@
+/* GLOBALS */
+
+:root {
+	/* Background gradient */
+	--c-soft-violet: hsl(273, 75%, 66%);
+	--c-soft-blue: hsl(240, 73%, 65%);
+
+	/* Fonts Colors */
+	--c-very-dark-desaturated-blue: hsl(238, 29%, 16%);
+	--c-soft-red: hsl(14, 88%, 65%);
+	--c-very-dark-grayish-blue: hsl(237, 12%, 33%);
+	--c-dark-grayish-blue: hsl(240, 6%, 50%);
+
+	/* Dividers */
+	--c-light-grayish-blue: hsl(240, 5%, 91%);
+	
+	/* Fonts */
+	--font-main:'Kumbh Sans', sans-serif;
+	
+}
+
+html {
+	font-size:62.5%;/*1rem = 10px*/
+	box-sizing:border-box;
+}
+
+*, *:before, *:after {
+	box-sizing:inherit;
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: var(--font-main);
+	font-size:1.2rem;
+}
+
+h1, h2, h3 {
+	margin:0;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+a {
+	text-decoration:none;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+/* LAYOUTS */
+
+.container {
+	width:83%;
+	max-width:1114px;
+	margin:0 auto;
+}
+
+section {
+	margin-bottom:14rem;
+}
+
+/* HEADINGS AND FONTS */
+
+.title {
+	font-size:4.8rem;
+	line-height:4.8rem;
+	letter-spacing:-1px;
+	font-family:var(--font-title);
+	color:var(--txt-white);
+}
+.link {
+	font-size:1.3rem;
+	font-weight:700;
+	letter-spacing:1px;
+	font-family:var(--font-title);
+	text-transform:uppercase;
+}
+.link:hover {
+	cursor:pointer;
+}
+
+/* COMPONENTS */
+
+.cta {
+	border:2px solid red;
+	padding:1.1rem 2.7rem;
+}
+
+.cta:hover {
+	color:#fff;
+	background-color: red;
+	cursor:pointer;
+}
+
+/* SECTIONS STYLES */
