@@ -1,6 +1,6 @@
 /* active states: 
 hover sur les questions : color + cursor pointer
-question ouverte : tittre question en gras + chevron inversé + affichage réponse
+
 */
 
 /* GLOBALS */
@@ -8,7 +8,8 @@ question ouverte : tittre question en gras + chevron inversé + affichage répon
 :root {
 	/* Background gradient */
 	--c-soft-violet: hsl(273, 75%, 66%);
-	--c-soft-blue: hsl(240, 73%, 65%);
+	/* --c-soft-blue: hsl(240, 73%, 65%); */
+	--c-soft-blue:hsl(250, 75%, 65%);
 
 	/* Fonts Colors */
 	--c-very-dark-desaturated-blue: hsl(238, 29%, 16%);
@@ -37,7 +38,13 @@ html {
 
 body {
 	font-family: var(--font-main);
-	font-size:1.2rem;
+	font-size:1.3rem;
+	min-height:100vh;
+	background:linear-gradient(var(--c-soft-violet), var(--c-soft-blue)) no-repeat;
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
 }
 
 h1, h2, h3 {
@@ -49,57 +56,114 @@ img {
 	height:auto;
 }
 
-a {
-	text-decoration:none;
-}
-
 ul li {
 	list-style-type: none;
 }
 
 /* LAYOUTS */
 
-.container {
+/* .container {
 	width:83%;
 	max-width:1114px;
 	margin:0 auto;
-}
+} */
 
-section {
-	margin-bottom:14rem;
-}
 
 /* HEADINGS AND FONTS */
+h1 {
+	font-size:3rem;
+	color:var(--c-very-dark-desaturated-blue);
+	text-align:center;
+	margin-bottom:2rem;
+}
 
-.title {
-	font-size:4.8rem;
-	line-height:4.8rem;
-	letter-spacing:-1px;
-	font-family:var(--font-title);
-	color:var(--txt-white);
+h2 {
+	font-size:inherit;
+	color:var(--c-very-dark-grayish-blue);
 }
-.link {
-	font-size:1.3rem;
-	font-weight:700;
-	letter-spacing:1px;
-	font-family:var(--font-title);
-	text-transform:uppercase;
-}
-.link:hover {
+
+h2:hover {
+	color:var(--c-soft-red);
 	cursor:pointer;
 }
 
-/* COMPONENTS */
-
-.cta {
-	border:2px solid red;
-	padding:1.1rem 2.7rem;
+.open  header  h2 {
+	font-weight: 700;
+	color: var(--c-very-dark-desaturated-blue);
+}
+.open:hover header h2 {
+	color: var(--c-very-dark-desaturated-blue);
+	cursor: auto;
 }
 
-.cta:hover {
-	color:#fff;
-	background-color: red;
-	cursor:pointer;
+
+
+
+.item__body {
+	font-size:1.2rem;
+	color:var(--c-dark-grayish-blue)
 }
 
 /* SECTIONS STYLES */
+
+.illustration {
+	position:absolute;
+	top:0;
+	width:100%;
+	margin-bottom:14rem;
+}
+.illustration:before {
+	content:url('../img/illustration-woman-online-mobile.svg');
+	position:absolute;
+	top:-11rem;
+	left:2rem;
+	filter: drop-shadow(3px 30px 10px #ddd);
+}
+.illustration:after {
+	content:url('../img/bg-pattern-mobile.svg');
+	position:absolute;
+	top:0;
+	left:5rem;
+}
+.card {
+	position:relative;
+	background: #fff;
+	padding:14rem 0 5rem;
+	width:87%;
+	max-width:918px;
+	margin:0 auto;
+	border-radius:2rem;
+	box-shadow: 1px 10px 40px 20px rgba(0, 0, 0, 0.2);
+}
+.accordion__list {
+	max-width:90%;
+	margin:0 auto;
+}
+.list__item {
+	border-bottom:1px solid var(--c-light-grayish-blue);
+}
+.item__header {
+	padding:2rem 0;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.item__body {
+	display:none;
+}
+.open .item__body {
+	display:block;
+	margin-bottom:2rem;
+}
+.open .item__header img {
+	transform:rotateX(180deg)
+}
+.attribution {
+	font-size:1.1rem;
+	text-align:center;
+	position:absolute;
+	bottom:2rem;
+}
+.attribution a {
+	color:#fff;
+}
