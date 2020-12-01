@@ -1,3 +1,8 @@
+/* active states: 
+hover sur les questions : color + cursor pointer
+question ouverte : tittre question en gras + chevron inversé + affichage réponse
+*/
+
 /* GLOBALS */
 
 :root {
