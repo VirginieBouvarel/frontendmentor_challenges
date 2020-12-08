@@ -16,6 +16,11 @@
 	
 	/* Fonts */
 	--font-main:'Kumbh Sans', sans-serif;
+
+	/* illustration positionning */
+	--body-mid-width: 50%;
+	--illustration-mid-width: calc( 266px / 2);
+	--illustration-ml-mid-width: calc( 30px / 2);
 	
 }
 
@@ -110,14 +115,15 @@ h2:hover {
 	content:url('../img/illustration-woman-online-mobile.svg');
 	position:absolute;
 	top:-11rem;
-	left:2rem;
+	left:calc(var(--body-mid-width) - var(--illustration-mid-width) - var(--illustration-ml-mid-width));
 	filter: drop-shadow(3px 30px 10px #ddd);
+	
 }
 .illustration:after {
 	content:url('../img/bg-pattern-mobile.svg');
 	position:absolute;
 	top:0;
-	left:5rem;
+	left:calc(var(--body-mid-width) - var(--illustration-mid-width) + var(--illustration-ml-mid-width));
 }
 .card {
 	position:relative;
