@@ -1,16 +1,10 @@
-/* active states: 
-hover sur les questions : color + cursor pointer
-
-*/
-
 /* GLOBALS */
 
 :root {
 	/* Background gradient */
 	--c-soft-violet: hsl(273, 75%, 66%);
-	/* --c-soft-blue: hsl(240, 73%, 65%); */
-	--c-soft-blue:hsl(250, 75%, 65%);
-
+	--c-soft-blue: hsl(240, 73%, 65%);
+	
 	/* Fonts Colors */
 	--c-very-dark-desaturated-blue: hsl(238, 29%, 16%);
 	--c-soft-red: hsl(14, 88%, 65%);
@@ -38,7 +32,7 @@ html {
 
 body {
 	font-family: var(--font-main);
-	font-size:1.3rem;
+	font-size:1.2rem;
 	min-height:100vh;
 	background:linear-gradient(var(--c-soft-violet), var(--c-soft-blue)) no-repeat;
 	display:flex;
@@ -80,6 +74,7 @@ h1 {
 h2 {
 	font-size:inherit;
 	color:var(--c-very-dark-grayish-blue);
+	font-weight:normal;
 }
 
 h2:hover {
@@ -100,7 +95,6 @@ h2:hover {
 
 
 .item__body {
-	font-size:1.2rem;
 	color:var(--c-dark-grayish-blue)
 }
 
@@ -136,7 +130,7 @@ h2:hover {
 	box-shadow: 1px 10px 40px 20px rgba(0, 0, 0, 0.2);
 }
 .accordion__list {
-	max-width:90%;
+	max-width:86%;
 	margin:0 auto;
 }
 .list__item {
