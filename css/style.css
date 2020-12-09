@@ -132,7 +132,7 @@ h2:hover {
 	display:none;
 }
 .open {
-	min-height:114px;
+	min-height:114.2px;
 }
 .open .item__body {
 	display:block;
@@ -188,6 +188,4 @@ h2:hover {
 		text-align:left;
 	}
 	
-
-
 }
