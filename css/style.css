@@ -59,6 +59,7 @@ ul li {
 }
 
 /* HEADINGS AND FONTS */
+
 h1 {
 	font-size:3rem;
 	color:var(--c-very-dark-desaturated-blue);
@@ -81,15 +82,18 @@ h2:hover {
 	font-weight: 700;
 	color: var(--c-very-dark-desaturated-blue);
 }
+
 .open:hover header h2 {
 	color: var(--c-very-dark-desaturated-blue);
 	cursor: auto;
 }
+
 .item__body {
 	color:var(--c-dark-grayish-blue)
 }
 
 /* SECTIONS STYLES */
+
 .card {
 	position:relative;
 	background:var(--c-white);
@@ -109,50 +113,61 @@ h2:hover {
 	filter: drop-shadow(3px 30px 10px #ddd);
 	
 }
+
 .illustration:after {
 	content:url('../img/bg-pattern-mobile.svg');
 	position:absolute;
 	top:0;
 	left:calc(50% - var(--illustration-mid-width) + var(--illustration-ml-mid-width));
 }
+
 .accordion {
 	width:86%;
 	margin:0 auto;
 }
+
 .list__item {
 	border-bottom:1px solid var(--c-light-grayish-blue);
 }
+
 .item__header {
 	padding:1.9rem 0;
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
 }
+
 .item__body {
 	display:none;
 }
+
 .open {
 	min-height:114.2px;
 }
+
 .open .item__body {
 	display:block;
 	margin-bottom:2rem;
 }
+
 .open .item__header img {
 	transform:rotateX(180deg)
 }
+
 .attribution {
 	font-size:1.1rem;
 	text-align:center;
 	position:absolute;
 	bottom:2rem;
 }
+
 .attribution a {
 	color:#fff;
 }
 
 
 @media screen and (min-width:1088px) {
+
 	.box:before {
 		content:url('../img/illustration-box-desktop.svg');
 		position:absolute;
@@ -160,12 +175,14 @@ h2:hover {
 		left:calc(50vw - 460px - 94px);/*centre de la page - moitié de card - moitié de box */
 		z-index:10;
 	}
+
 	.card {
 		display:flex;
 		justify-content: flex-end;
 		padding:7rem 0 8rem;
 		overflow:hidden;
 	}
+
 	.illustration:before {
 		content:url('../img/illustration-woman-online-desktop.svg');
 		position:absolute;
@@ -174,18 +191,20 @@ h2:hover {
 		z-index:1;
 		filter: drop-shadow(0px 0px 0px #ddd);
 	}
+
 	.illustration:after {
 		content:url('../img/bg-pattern-desktop.svg');
 		position:absolute;
 		top:-29rem;
 		left:-58rem;
 	}
+
 	.accordion {
 		margin: 0 9rem;
 		max-width:350px;
 	}
+
 	h1 {
 		text-align:left;
 	}
-	
 }
