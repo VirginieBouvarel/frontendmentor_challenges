@@ -135,6 +135,9 @@ h2:hover {
 	display:block;
 	margin-bottom:2rem;
 }
+.open .item__body:not(.big) {
+	margin-bottom: 3.38rem;
+}
 .open .item__header img {
 	transform:rotateX(180deg)
 }
