@@ -19,10 +19,8 @@
 	--font-main:'Kumbh Sans', sans-serif;
 
 	/* illustration positionning */
-	--body-mid-width: 50%;
 	--illustration-mid-width: calc( 266px / 2);
 	--illustration-ml-mid-width: calc( 30px / 2);
-	
 }
 
 html {
@@ -116,7 +114,7 @@ h2:hover {
 	content:url('../img/illustration-woman-online-mobile.svg');
 	position:absolute;
 	top:-11rem;
-	left:calc(var(--body-mid-width) - var(--illustration-mid-width) - var(--illustration-ml-mid-width));
+	left:calc(50% - var(--illustration-mid-width) - var(--illustration-ml-mid-width));
 	filter: drop-shadow(3px 30px 10px #ddd);
 	
 }
@@ -124,7 +122,7 @@ h2:hover {
 	content:url('../img/bg-pattern-mobile.svg');
 	position:absolute;
 	top:0;
-	left:calc(var(--body-mid-width) - var(--illustration-mid-width) + var(--illustration-ml-mid-width));
+	left:calc(50% - var(--illustration-mid-width) + var(--illustration-ml-mid-width));
 }
 .accordion {
 	width:86%;
@@ -165,7 +163,7 @@ h2:hover {
 		content:url('../img/illustration-box-desktop.svg');
 		position:absolute;
 		top:38rem;
-		left:2.5rem;
+		left:calc(50vw - 460px - 94px);/*centre de la page - moitié de card - moitié de box */
 		z-index:10;
 	}
 	.card {
