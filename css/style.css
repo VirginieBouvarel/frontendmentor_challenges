@@ -156,7 +156,7 @@ h2:hover {
 	.box:before {
 		content:url('../img/illustration-box-desktop.svg');
 		position:absolute;
-		top:38rem;
+		top:41rem;
 		left:calc(50vw - 460px - 94px);/*centre de la page - moitié de card - moitié de box */
 		z-index:10;
 	}
