@@ -1,4 +1,4 @@
-# FAQ accordion
+# FAQ accordion ![Démo](https://virginiebouvarel.github.io/faq_accordion/)
 
 Objectif: Réalisation du challenge frontendmentor.io "faq-accordion-card-main".
 
