@@ -171,7 +171,7 @@ h2:hover {
 	.box:before {
 		content:url('../img/illustration-box-desktop.svg');
 		position:absolute;
-		top:37rem; 
+		top:calc(50vh - 53px); /*centre de la page - moitié de la hauteur de box */
 		left:calc(50vw - 460px - 94px);/*centre de la page - moitié de card - moitié de box */
 		z-index:10;
 	}
@@ -206,5 +206,11 @@ h2:hover {
 
 	h1 {
 		text-align:left;
+	}
+}
+
+@media screen and (max-height:520px) {
+	.box:before {
+		display:none;
 	}
 }
