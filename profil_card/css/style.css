@@ -1,0 +1,122 @@
+/* GLOBALS */
+
+:root {
+	/* Colors */
+	--c-dark-cyan:hsl(185, 75%, 39%);
+	--c-very-dark-blue: hsl(229, 23%, 23%);
+	--c-dark-grayish-blue:hsl(229, 23%, 23%);
+	--c-dark-gray:hsl(0, 0%, 59%);
+	--c-white:hsl(0, 0%, 100%);
+
+	/* Fonts */
+	--f-main:'Kumbh Sans', sans-serif;
+}
+
+html {
+	font-size:62.5%;/*1rem = 10px*/
+	box-sizing:border-box;
+}
+
+*, *:before, *:after {
+	box-sizing:inherit;
+	margin:0;
+	padding:0;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+/* SECTIONS STYLES */
+
+body {
+	perspective: 1000px;
+	background:url('../img/bg-pattern-top.svg'), url('../img/bg-pattern-bottom.svg'),var(--c-dark-cyan);
+	background-repeat: no-repeat;
+	background-position: right calc(46.5vw + 15%) bottom calc(65vh - 15vw), left calc(35vw + 25%) top calc(68vh - 10vw);
+	
+	font-family: var(--f-main);
+	font-size:1.8rem;
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	overflow:hidden;
+}
+
+.container {
+	transform-style: preserve-3d;
+	max-width:120rem; 
+	max-height:80rem;
+}
+.card {
+	transform-style: preserve-3d;
+
+	position:relative;
+	overflow:hidden;
+	width:325px;
+	background-color: var(--c-white);
+	border-radius:15px;
+	margin-bottom:10rem;
+	z-index:10;
+}
+.card:before {
+	content:url('../img/bg-pattern-card.svg');
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-1;
+}
+.card__header {
+	border-radius:15px 15px 0 0;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: center;
+}
+
+.header__img img {
+	border-radius:50%;
+	border:5px solid var(--c-white);
+	margin:8rem 0 2.5rem;
+}
+.header__name {
+	color:var(--c-dark-gray);
+}
+.header__name span {
+	color:var(--c-very-dark-blue);
+	font-weight:700;
+}
+.header__city {
+	font-size:1.3rem;
+	color:var(--c-dark-gray);
+	letter-spacing: 1px;
+	margin:1.3rem 0 2.3rem;
+}
+.card__stats {
+	padding:2.5rem 4rem;
+	display:flex;
+	justify-content: space-between;
+	border-top:1px solid hsla(0, 0%, 59%, 0.5);
+}
+.stats-data {
+	text-align:center;
+}
+.data__score {
+	font-weight:700;
+	font-size:1.6rem;
+	margin-bottom:0.7rem;
+}
+.data__type {
+	font-size:1rem;
+	color:var(--c-dark-gray);
+	letter-spacing: 2px;
+}
+
+.attribution {
+	position:absolute;
+	bottom:2rem;
+}
+ 
