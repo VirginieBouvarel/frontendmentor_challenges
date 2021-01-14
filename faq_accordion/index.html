@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+
+  <!-- icons fontawesome -->
+  <script src="https://kit.fontawesome.com/0ac17cb549.js"></script>
+  <!-- main font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+  <!-- reset css-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- custom styles-->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+</head>
+<body>
+  <div class="box"></div>
+
+  <div class="card">
+    <div class="illustration"></div>
+    <div class="accordion">
+      <h1>FAQ</h1>
+      <ul class="accordion__list" id="list">
+        <li class="list__item">
+          <header class="item__header">
+            <h2>How many team members can I invite?</h2>
+            <img src="img/icon-arrow-down.svg" alt="chevron">
+          </header>
+          <p class="item__body">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+        </li>
+        <li class="list__item open">
+          <header class="item__header">
+            <h2>What is the maximum file upload size?</h2>
+            <img src="img/icon-arrow-down.svg" alt="chevron">
+          </header>
+          <p class="item__body">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+        </li>
+        <li class="list__item">
+          <header class="item__header">
+            <h2>How do I reset my password?</h2>
+            <img src="img/icon-arrow-down.svg" alt="chevron">
+          </header>
+          <p class="item__body big">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+        </li>
+        <li class="list__item">
+          <header class="item__header">
+            <h2>Can I cancel my subscription?</h2>
+            <img src="img/icon-arrow-down.svg" alt="chevron">
+          </header>
+          <p class="item__body">Yes! Send us a message and we’ll process your request no questions asked.</p>
+        </li>
+        <li class="list__item">
+          <header class="item__header">
+            <h2> Do you provide additional support?</h2>
+            <img src="img/icon-arrow-down.svg" alt="chevron">
+          </header>
+          <p class="item__body">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Virginie Bouvarel©2020</a>.
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
