@@ -1,0 +1,378 @@
+/**
+* GLOBALS
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+	/*Colors*/
+	--bg-intro: hsl(217, 28%, 15%);/*sign-up*/
+	--bg-main: hsl(218, 28%, 13%);
+	--bg-footer: hsl(216, 53%, 9%);
+	--bg-testimonials: hsl(219, 30%, 18%);
+	--text-color: hsl(0, 0%, 100%);/*white*/
+	--cyan:hsl(176, 68%, 64%);
+	--blue:hsl(198, 60%, 50%);
+	
+	/*Fonts*/
+	--main-font:'Open Sans', sans-serif;/*weight 400 et 700*/
+	--title-font:'Raleway', sans-serif;/*headings, call-to-actions, header nav, weight 400 et 700*/
+}
+html {
+	font-size:62.5%;
+	box-sizing:border-box;
+}
+
+*, *:before, *:after {
+	box-sizing:inherit;
+	margin:0;
+	padding:0;
+}
+
+body {
+	background-color:black;
+	font-family: var(--main-font);
+	font-size:1.4rem;
+	color:var(--text-color);
+}
+img {
+	max-width:100%;
+}
+a {
+	text-decoration:none;
+	color:var(--text-color);
+}
+p {
+	font-size:2.8rem;
+	line-height:1.4;
+}
+h2 {
+    font-size: 3.5rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 3.2rem;
+}
+.pill {
+    border: none;
+    border-radius: 50px;
+    padding: 3.3rem 0;
+	/* width: 64%; */
+	font-size: 2.6rem;
+}
+.pill--blue {
+	background: linear-gradient(to right,#50C8D6,#3EAFCF);
+	color: var(--text-color);
+	font-weight: 700;
+}
+.pill--white {
+	background: #fff;
+	color:rgb(226, 226, 226,0.2);
+	font-size: 2rem;
+    padding-left: 6rem;
+}
+/**
+* LAYOUT
+*/
+.page {
+	width:100%;
+	margin:0 auto;
+	background: var(--bg-main);
+}
+
+/**
+* HEADER
+*/
+header {
+	background: linear-gradient(#1B2330 50%,#181E2A 50%);
+}
+.header > * {
+	text-align:center;
+}
+nav {
+	width:87%;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding: 4.5rem 0;
+	
+}
+h1 {
+	margin:0;
+	margin-right: auto;
+	display:inline;
+}
+.logo {
+	width: 90%;
+    margin-top: 0.5rem;
+    margin-left: -0.5rem;
+}
+nav a:not(.logo) {
+	color:var(--text-color);
+	font-size:2.3rem;
+	font-family:var(--title-font);	
+}
+.middle-link {
+	margin-right: 5.4rem;
+}
+
+/**
+* HEADER PRESENTATION
+*/
+.presentation {
+	background: no-repeat center  35% / 100%  url("../img/bg-curvy-mobile.svg");
+}
+.header__img {
+	display: block;
+    margin: 5rem auto 6.8rem;
+    width: 81%;
+}
+.header__punchline {
+    font-family: var(--title-font);
+    font-size: 4.8rem;
+    font-weight: 700;
+    padding: 0 8rem;
+	margin-bottom:4.3rem;
+}
+.header__text {
+	padding:0 8rem;
+	margin-bottom:7.2rem;
+}
+.header__button {
+	width:48rem;
+	margin-bottom:26rem;
+}
+
+/**
+* SECTION SERVICES
+*/
+.services {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+}
+.services > * {
+	width:87%;
+	text-align:center;
+}
+.service-box {
+	margin-bottom:18rem;
+}
+.service-box__img {
+	width:19%;
+	margin-bottom:7rem;
+}
+.service-box__img--security {
+	width:17%;
+	margin-bottom:6rem;
+}
+.service-box__img--collaboration {
+	width:20%;
+	margin-top:2rem;
+	margin-bottom:7.5rem;
+}
+.service-box__img--storage {
+	width: 21%;
+    margin-top: 1.7rem;
+    margin-bottom: 8rem;
+}
+.service-box__title {
+	font-size:3.4rem;
+	margin-bottom:2rem;
+}
+.service-box__text {
+	padding:0 1rem;
+}
+
+/**
+* SECTION PRODUCTIVITY
+*/
+.productivity {
+	display:flex;
+	flex-flow:column nowrap;
+	align-items:center;
+	margin-bottom:28rem;
+}
+.productivity__img {
+	order:-1;
+	margin-top:15rem;
+	margin-bottom:10rem;
+}
+.productivity > div{
+	width:85%;
+}
+.productivity__text {
+	margin-bottom:4rem;
+}
+.productivity__link {
+	font-size:2.4rem;
+	color:var(--cyan);
+	width:41%;
+	border-bottom:1px solid var(--cyan);
+	padding-bottom:1.4rem;
+	display:flex;
+	align-items:center;
+}
+.productivity__link > img {
+	width:12%;
+	margin-left:1rem;
+}
+
+/**
+* SECTION TESTIMONIALS
+*/
+.testimonials {
+	padding-top:4rem;
+	background: no-repeat top 2.8rem left 10.7rem / 6% url(../img/bg-quotes.png);
+	display:flex;
+	flex-flow:column nowrap;
+	align-items:center;
+	margin-bottom: 29.5rem;
+}
+.testimonial-box {
+	background-color:var(--bg-testimonials);
+	border-radius:8px;
+	width:75%;
+	margin:2rem 0 3.2rem;
+	box-shadow:5px 5px 20px 0px #1B2330;
+}
+.testimonial-box__text {
+	font-size: 2rem;
+    line-height: 1.8;
+    margin-top: 5rem;
+    padding: 0 4rem;
+}
+.testimonial-box__author {
+	width:85%;
+	margin:3rem auto 4rem;
+	display:flex;
+}
+.author__img {
+	width: 4.7rem;
+    height: 4.7rem;
+	border-radius: 50%;
+	margin-right: 2rem;
+}
+.author__name {
+	font-size:1.8rem;
+	font-weight:600;
+	letter-spacing:1.5px;
+	margin-bottom:0.6rem;
+}
+.author__job {
+	font-size:1.6rem;
+}
+
+/**
+* SECTION START
+*/
+.sign-up__box {
+	background-color: var(--bg-intro);
+	width:90%;
+	margin:0 auto;
+	border-radius:20px;
+	text-align:center;
+	padding:7rem 0 5.6rem;
+	margin-bottom:-40rem;
+	position:relative;
+}
+.sign-up__text {
+	padding: 0 5rem;
+    line-height: 1.6;
+    margin-bottom: 4rem;
+}
+.sign-up__form {
+	width:90%;
+	margin:0 auto;
+	display:flex;
+	flex-flow:column wrap;
+	align-items:center;
+}
+.sign-up__form > * {
+    width: 56rem;
+    margin: 2.5rem 0;
+}
+
+/**
+* FOOTER
+*/
+
+.footer {
+	background-color: var(--bg-footer);
+	padding-top:50rem;
+}
+.footer__logo {
+	width: 47%;
+    margin-left: 7.7rem;
+    margin-top: 4.5rem;
+}
+.footer__infos {
+	width:86%;
+	margin:9rem auto 0;
+}
+.infos__address {
+	margin-top:2rem;
+	display:flex;
+	align-items:flex-start;
+	margin-bottom:3rem;
+}
+.infos__address > img {
+	width:14%;
+	margin-right:6rem;
+}
+.infos__address > p {
+    margin-top: -1.3rem;
+    font-size: 3rem;
+    line-height: 1.6;
+	letter-spacing: 1.1px;
+}
+.infos__contacts {
+	margin-left:1rem;
+}
+.contacts__icon {
+	width:4%;
+	margin-right:4.5rem;
+}
+.contacts__icon--email {
+	width: 6%;
+	margin-top: 5rem;
+	margin-right:3.5rem;
+}
+.infos__sitemap {
+	margin:16.5rem 0 17rem 0.5rem;
+	font-size:3rem;
+}
+.infos__sitemap > * {
+	display:block;
+	margin-bottom:4rem;
+}
+.contact-link {
+	margin-top:11rem;
+}
+.infos__socials {
+	width:50%;
+	margin:0 auto;
+	text-align:center;
+	margin-bottom:8rem;
+}
+.fab {
+	border:1px solid #fff;
+	border-radius:50%;
+	font-size:2.3rem;
+	padding:1.5rem;
+	margin:0 0.9rem;
+}
+.fa-facebook-f {
+	padding:1.5rem 2rem;
+}
+.fa-instagram {
+	padding:1.5rem 1.6rem;
+}
+.attribution {
+	padding-bottom:5rem;
+}
+
+@media screen and (min-width:1440px) {
+	.page {
+		width:1440px;
+	}
+}
