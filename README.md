@@ -1,6 +1,6 @@
 # Frontend Mentor Challenges
 
-![](logo-desktop.svg)
+![](logo-frontendmentor.svg)
 
 Le site frontendmentor.io propose toute une liste de maquettes pour permettre aux développeurs front de challenger leurs compétences en intégration.
 Vous pouvez visiter mon [profil](https://www.frontendmentor.io/profile/VirginieBouvarel) ou découvrir directement le site [frontendmentor.io](https://www.frontendmentor.io/).<br><br>
