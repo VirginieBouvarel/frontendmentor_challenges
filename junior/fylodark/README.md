@@ -1,11 +1,13 @@
-# Fylodark
+### Live version [here](https://virginiebouvarel.github.io/frontendmentor_challenges/junior/fylodark).
 
-Objectif: Réalisation du challenge frontendmentor.io "fylo_landing_page"
+# Frontend Mentor - Fylo dark theme landing page
 
-> Technos: HTML/CSS
+![Design preview for this coding challenge](./src/design/preview.jpg)<br><br>
+
+## Détails
+
+Avec ce challenge j'ai appris...
+- que
 
 
-# Frontend Mentor - Fylo landing page with dark theme and features grid
-
-![Design preview for the Fylo landing page with dark theme and features grid challenge](./src/design/desktop-preview.jpg)
-
+### Architecture à revoir: globals + link html
