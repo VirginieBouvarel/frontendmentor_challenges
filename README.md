@@ -7,6 +7,8 @@ Vous pouvez visiter mon [profil](https://www.frontendmentor.io/profile/VirginieB
 
 ## Mes derniers challenges :
 
+- [**Insure landing page**](https://github.com/VirginieBouvarel/frontendmentor-challenges/tree/master/insure_landingpage) : Une landing page avec des positionnements de background intéressants
+
 - [**FAQ accordion card**](https://github.com/VirginieBouvarel/frontendmentor-challenges/tree/master/faq-accordion) : Une section FAQ avec animation d'un accordéon
    
 - [**Profile Card Component**](https://github.com/VirginieBouvarel/frontendmentor-challenges/tree/master/profil-card) : Une simple card avec un avatar et l'ajout d'un effet 3D
@@ -15,4 +17,4 @@ Vous pouvez visiter mon [profil](https://www.frontendmentor.io/profile/VirginieB
 
 - [**Clipboard landing page**](https://github.com/VirginieBouvarel/frontendmentor-challenges/tree/master/clipboard-v3) : Une landing page réalisée en mobile first
 
-- [**Insure landing page**](https://github.com/VirginieBouvarel/frontendmentor-challenges/tree/master/insure_landingpage) : Une landing page avec des positionnements de background intéressants
+
