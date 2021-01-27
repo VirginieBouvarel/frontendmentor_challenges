@@ -1,40 +1,13 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+cache/
+/.vscode/ 
+node-modules
 
-=======
->>>>>>> 25e8faf4252b87a57193ca025e3dd25b0e4b5899
-=======
->>>>>>> b057d415e9887c5a6d18401ca3ed6f1dd403d63d
-# Avoid accidental Sketch file upload 
-###############################################
-## Please do not remove line 5 - thanks! 🙂 ##
-###############################################
+.DS_Store
+.prettierignore
+
+*.map
+*.log
 *.sketch
-
-<<<<<<< HEAD
-# Avoid accidental XD or Figma upload if you convert the design file
-#######################################################
-## Please do not remove lines 11 and 12 - thanks! 🙂 ##
-#######################################################
 *.xd
 *.fig
 
-# Avoid your project being littered with annoying .DS_Store files!
-.DS_Store
-
-<<<<<<< HEAD
-.prettierignore
-=======
->>>>>>> 25e8faf4252b87a57193ca025e3dd25b0e4b5899
-
-=======
-.DS_Store
->>>>>>> 81f4c9c4fadbdd8a2a9ef3ffefa6a3640e301a11
-=======
-# Avoid your project being littered with annoying .DS_Store files!
-.DS_Store
-
-# Documents frontendmentor.io
-style-guide.md
->>>>>>> b057d415e9887c5a6d18401ca3ed6f1dd403d63d
