@@ -1,5 +1,5 @@
 cache/
-/.vscode/ 
+.vscode/ 
 node-modules
 
 .DS_Store
@@ -10,4 +10,25 @@ node-modules
 *.sketch
 *.xd
 *.fig
+
+
+
+### Exemples 
+# Pour ignorer un fichier précis
+# 'fichier.ext'
+# Pour ignorer un dossier complet
+# dossier/
+# Pour ignorer un type de fichier précis
+# *.ext
+# Pour exclure un fichier précis d'un type de fichiers ignorés en masse
+# *.ext
+# !fichier.ext
+# Pour ignorer des fichiers situés à la racine
+# /fichier.ext
+# Pour ignorer les mêmes fichiers dans tout le repo
+#*.json
+
+# Pour ajouter au .gitignore un fichier déjà suivi par git
+# Ce fichiers apparaîtra toujours dans les précédents commit mais plus dans les suivants
+# git rm --cached fichier.ext
 
