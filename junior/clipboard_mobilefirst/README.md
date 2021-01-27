@@ -1,11 +1,11 @@
-# Clipboard Mobile-first
+### Live version [here](https://virginiebouvarel.github.io/frontendmentor_challenges/junior/clipboard_mobilefirst).
 
-Objectif: Réalisation du challenge frontendmentor.io "clipboard-landing-page-master" en version mobile-first
+# Frontend Mentor - Clipboard landing page (version mobilefirst)
 
-> Technos: HTML/CSS
+![Design preview for this coding challenge](./src/design/preview.jpg)<br><br>
 
-> Outil utilisé: Photopéa
+## Détails
 
-# Frontend Mentor - Clipboard landing page
-
-![Design preview for the Clipboard landing page coding challenge](./src/design/desktop-preview.jpg)
+Avec ce challenge j'ai appris...
+- que le pixel perfect avait ses limites et que l'équilibre avec la maintenabilité devait être réfléchi.
+- que vouloir positionner les éléments en flexbox dès le départ pouvait être inutile et annulait l'intérêt de l'approche mobilefirst à cause de la redondance
