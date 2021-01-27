@@ -7,12 +7,12 @@ Vous pouvez visiter mon [profil](https://www.frontendmentor.io/profile/VirginieB
 
 ## Mes derniers challenges :
 
-- [**Easybank Landing Page**](https://github.com/zathio/frontendmentor-challenges/tree/master/easybank-landing-page) : A digital banking landing page with responsive design.   
+- [**FAQ accordion card**](https://github.com/VirginieBouvarel/frontendmentor-challenges/tree/master/faq-accordion) : Une section FAQ avec animation d'un accordéon
    
-- [**Single Price Grid Component**](https://github.com/zathio/frontendmentor-challenges/tree/master/single-price-grid-component) : A responsive pricing component using CSS grids.
-   
-- [**Fylo Data Storage Component**](https://github.com/zathio/frontendmentor-challenges/tree/master/fylo-data-storage-component) : A modern and responsive data storage interface.
+- [**Profile Card Component**](https://github.com/VirginieBouvarel/frontendmentor-challenges/tree/master/profil-card) : Une simple card avec un avatar et l'ajout d'un effet 3D
 
-- [**Chat App Illustration**](https://github.com/zathio/frontendmentor-challenges/tree/master/chat-app-css-illustration) : A Chat App landing page with only CSS.
+- [**Social proof section**](https://github.com/VirginieBouvarel/frontendmentor-challenges/tree/master/social-proof-section) : Une section testimonials avec des positionnements flexbox avancés
 
-- [**Profile Card Component**](https://github.com/zathio/frontendmentor-challenges/tree/master/profile-card-component) : A profile card component made with Tailwind CSS.
+- [**Clipboard landing page**](https://github.com/VirginieBouvarel/frontendmentor-challenges/tree/master/clipboard-v3) : Une landing page réalisée en mobile first
+
+- [**Insure landing page**](https://github.com/VirginieBouvarel/frontendmentor-challenges/tree/master/insure_landingpage) : Une landing page avec des positionnements de background intéressants
