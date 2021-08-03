@@ -1,0 +1,15 @@
+/*
+Classe de masquage d'accessibilité 
+Cette classe est ajoutée sur un élément nécessaire en termes d'accessibilité/SEO ou recommandé par le W3C mais non souhaité sur le design final. L'élément concerné ne sera pas visible par l'utilisateur mais sera pris en compte par les liseuses et les robots de référencement.
+*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+}
